@@ -1,0 +1,2111 @@
+{
+    "catalogName": "stc1.30.3",
+    "description": "Smart Template Custom 1.30.3",
+    "displayName": "Smart Template",
+    "catalogLang": "sapui5",
+    "libraryVersion": "1.30.3",
+    "isRootCatalog": false,
+    "isDefault": false,
+    "libraryURL": "/api/uicatalogs/public/uilib/sapui5/1.30.3",
+    "libraryPublicURL": "/api/uicatalogs/public/uilib/sapui5/1.30.3",
+    "controls": {
+    "ListReport-Filter": {
+        "additionalMetadata": {
+            "aggregations": {},
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "Description": {
+                    "displayName": "Description",
+                    "name": "Description",
+                    "type": "string",
+                    "defaultValue": "Filter",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                },
+                "FilterOn": {
+                    "displayName": "Filter on",
+                    "name": "FilterOn",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--Filter uicatalog-smartTemplates--Filter-dims"
+        },
+        "description": "Filter",
+        "displayName": "Filter",
+        "displayToUser": true,
+        "diffName": "Description",
+        "groupName": "1 - FilterBar Controls",
+        "name": "ListReport-Filter"
+    },
+    "ListReport-FilterBar": {
+        "additionalMetadata": {
+            "aggregations": {
+                "filters": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "filters",
+                    "multiple": true,
+                    "name": "filters",
+                    "types": ["ListReport-Filter"],
+                    "displayToUser": true,
+                    "visibility": "public"
+                }
+            },
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "AllowFreeSearch": {
+                    "displayName": "Allow free search",
+                    "name": "AllowFreeSearch",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false,
+                    "possibleValues": ["true", "false"]
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--FilterBar uicatalog-smartTemplates--FilterBar-dims",
+            "isUndeletable": true
+        },
+        "description": "FilterBar",
+        "displayName": "Filter bar",
+        "displayToUser": false,
+        "diffName": "",
+        "name": "ListReport-FilterBar"
+    },
+    "ListReport-ActionButton": {
+        "additionalMetadata": {
+            "aggregations": {},
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "Label": {
+                    "displayName": "Label",
+                    "name": "Label",
+                    "type": "string",
+                    "defaultValue": "Action",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                },
+                "Importance": {
+                    "displayName": "Responsiveness",
+                    "name": "Importance",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false,
+                    "possibleValues": [
+                        {
+                            "value": "High",
+                            "displayValue": "Fixed"
+                        },
+                        {
+                            "value": "Medium",
+                            "displayValue": "Pop-in"
+                        },
+                        {
+                            "value": "Low",
+                            "displayValue": "Pop-out"
+                        }
+                    ],
+                    "defaultValue": "High"
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--ActionButton uicatalog-smartTemplates--ActionButton-dims"
+        },
+        "description": "ActionButton",
+        "displayName": "Action button",
+        "displayToUser": true,
+        "diffName": "Label",
+        "groupName": "2 - Table Controls",
+        "name": "ListReport-ActionButton"
+    },
+    "ListReport-Column": {
+        "additionalMetadata": {
+            "aggregations": {},
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "Title": {
+                    "displayName": "Title",
+                    "name": "Title",
+                    "type": "string",
+                    "defaultValue": "Column title",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                },
+                "Value": {
+                    "displayName": "Value",
+                    "name": "Value",
+                    "type": "string",
+                    "defaultValue": "Column value",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                },
+
+                "Currency": {
+                    "displayName": "Currency",
+                    "name": "Currency",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                },
+                "Url": {
+                    "displayName": "Url",
+                    "name": "Url",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": true,
+                    "isDataDriven": true
+                },
+                "AdditionalValue": {
+                    "displayName": "Additional value",
+                    "name": "AdditionalValue",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                },
+                "Importance": {
+                    "displayName": "Responsiveness",
+                    "name": "Importance",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false,
+                    "possibleValues": [
+                        {
+                            "value": "High",
+                            "displayValue": "Fixed"
+                        },
+                        {
+                            "value": "Medium",
+                            "displayValue": "Pop-in"
+                        },
+                        {
+                            "value": "Low",
+                            "displayValue": "Pop-out"
+                        }
+                    ],
+                    "defaultValue": "High"
+                }
+            },
+            "designProperties": {
+                "isUndeletable": {
+                    "displayName": "isUndeletable",
+                    "name": "isUndeletable",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "displayToUser": false,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--Column uicatalog-smartTemplates--Column-dims"
+        },
+        "description": "Column",
+        "displayName": "Column",
+        "displayToUser": true,
+        "diffName": "Title",
+        "groupName": "2 - Table Controls",
+        "name": "ListReport-Column"
+    },
+    "ListReport-Table": {
+        "additionalMetadata": {
+            "aggregations": {
+                "actionButtons": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "action buttons",
+                    "multiple": true,
+                    "name": "actionButtons",
+                    "types": ["ListReport-ActionButton"],
+                    "displayToUser": true,
+                    "visibility": "public"
+                },
+                "columns": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "columns",
+                    "multiple": true,
+                    "name": "columns",
+                    "types": ["ListReport-Column"],
+                    "displayToUser": true,
+                    "visibility": "public"
+                }
+            },
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "Title": {
+                    "displayName": "Title",
+                    "name": "Title",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--Table uicatalog-smartTemplates--Table-dims",
+            "isUndeletable": true
+        },
+        "description": "Table",
+        "displayName": "Table",
+        "displayToUser": false,
+        "diffName": "Title",
+        "name": "ListReport-Table"
+    },
+    "ListReport-ListReport": {
+        "additionalMetadata": {
+            "aggregations": {
+                "filterBars": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "filter bars",
+                    "multiple": false,
+                    "name": "filterBars",
+                    "types": ["ListReport-FilterBar"],
+                    "displayToUser": true,
+                    "visibility": "public"
+                },
+                "tables": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "tables",
+                    "multiple": false,
+                    "name": "tables",
+                    "types": ["ListReport-Table"],
+                    "displayToUser": true,
+                    "visibility": "public"
+                }
+            },
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {},
+            "iconClass": "uicatalog-smartTemplates--ListReport uicatalog-smartTemplates--ListReport-dims"
+        },
+        "description": "ListReport",
+        "displayName": "List Report",
+        "displayToUser": false,
+        "diffName": "",
+        "groupName": "root Controls",
+        "name": "ListReport-ListReport"
+    },
+    "ObjectPage-ActionButton": {
+        "additionalMetadata": {
+            "aggregations": {},
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "Label": {
+                    "displayName": "Label",
+                    "name": "Label",
+                    "type": "string",
+                    "defaultValue": "Action",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--ActionButton uicatalog-smartTemplates--ActionButton-dims"
+        },
+        "description": "ActionButton",
+        "displayName": "Action button",
+        "displayToUser": true,
+        "diffName": "Label",
+        "groupName": "2 - Header Controls",
+        "name": "ObjectPage-ActionButton"
+    },
+    "ObjectPage-KPI": {
+        "additionalMetadata": {
+            "aggregations": {},
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "Title": {
+                    "displayName": "Title",
+                    "name": "Title",
+                    "type": "string",
+                    "defaultValue": "KPI",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                },
+                "Value": {
+                    "displayName": "Value",
+                    "name": "Value",
+                    "type": "string",
+                    "defaultValue": "Value",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                },
+                "Currency": {
+                    "displayName": "Currency",
+                    "name": "Currency",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--KPI uicatalog-smartTemplates--KPI-dims"
+        },
+        "description": "KPI",
+        "displayName": "KPI",
+        "displayToUser": true,
+        "diffName": "Title",
+        "groupName": "2 - Header Controls",
+        "name": "ObjectPage-KPI"
+    },
+    "ObjectPage-Header": {
+        "additionalMetadata": {
+            "aggregations": {
+                "actionButtons": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "action buttons",
+                    "multiple": true,
+                    "name": "actionButtons",
+                    "types": ["ObjectPage-ActionButton"],
+                    "displayToUser": true,
+                    "visibility": "public"
+                },
+                "kPIs": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "KPIs",
+                    "multiple": true,
+                    "name": "kPIs",
+                    "types": ["ObjectPage-KPI"],
+                    "displayToUser": true,
+                    "visibility": "public"
+                }
+            },
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "HeaderBarText": {
+                    "displayName": "Header bar text",
+                    "name": "HeaderBarText",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                },
+                "Title": {
+                    "displayName": "Title",
+                    "name": "Title",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                },
+                "Description": {
+                    "displayName": "Description",
+                    "name": "Description",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                },
+                "ImageSource": {
+                    "displayName": "Image source",
+                    "name": "ImageSource",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--Header uicatalog-smartTemplates--Header-dims",
+            "isUndeletable": true
+        },
+        "description": "Header",
+        "displayName": "Header",
+        "displayToUser": false,
+        "diffName": "",
+        "groupName": "1 - ObjectPage Controls",
+        "name": "ObjectPage-Header"
+    },
+    "ObjectPage-TableAction": {
+        "additionalMetadata": {
+            "aggregations": {},
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "Label": {
+                    "displayName": "Label",
+                    "name": "Label",
+                    "type": "string",
+                    "defaultValue": "Action",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                },
+                "Importance": {
+                    "displayName": "Responsiveness",
+                    "name": "Importance",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false,
+                    "possibleValues": [
+                        {
+                            "value": "High",
+                            "displayValue": "Fixed"
+                        },
+                        {
+                            "value": "Medium",
+                            "displayValue": "Pop-in"
+                        },
+                        {
+                            "value": "Low",
+                            "displayValue": "Pop-out"
+                        }
+                    ],
+                    "defaultValue": "High"
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--TableAction uicatalog-smartTemplates--TableAction-dims"
+        },
+        "description": "TableAction",
+        "displayName": "Table action",
+        "displayToUser": true,
+        "diffName": "",
+        "groupName": "5 - Table Controls",
+        "name": "ObjectPage-TableAction"
+    },
+    "ObjectPage-Column": {
+        "additionalMetadata": {
+            "aggregations": {},
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "Title": {
+                    "displayName": "Title",
+                    "name": "Title",
+                    "type": "string",
+                    "defaultValue": "Column title",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                },
+                "Value": {
+                    "displayName": "Value",
+                    "name": "Value",
+                    "type": "string",
+                    "defaultValue": "Column value",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                },
+                "Currency": {
+                    "displayName": "Currency",
+                    "name": "Currency",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                },
+                "Url": {
+                    "displayName": "Url",
+                    "name": "Url",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": true,
+                    "isDataDriven": true
+                },
+                "AdditionalValue": {
+                    "displayName": "Additional Value",
+                    "name": "AdditionalValue",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                },
+                "Importance": {
+                    "displayName": "Responsiveness",
+                    "name": "Importance",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false,
+                    "possibleValues": [
+                        {
+                            "value": "High",
+                            "displayValue": "Fixed"
+                        },
+                        {
+                            "value": "Medium",
+                            "displayValue": "Pop-in"
+                        },
+                        {
+                            "value": "Low",
+                            "displayValue": "Pop-out"
+                        }
+                    ],
+                    "defaultValue": "High"
+                }
+            },
+            "designProperties": {
+                "isUndeletable": {
+                    "displayName": "isUndeletable",
+                    "name": "isUndeletable",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "displayToUser": false,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--Column uicatalog-smartTemplates--Column-dims"
+        },
+        "description": "Column",
+        "displayName": "Column",
+        "displayToUser": true,
+        "diffName": "Title",
+        "groupName": "5 - Table Controls",
+        "name": "ObjectPage-Column"
+    },
+    "ObjectPage-Table": {
+        "additionalMetadata": {
+            "aggregations": {
+                "tableActions": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "table actions",
+                    "multiple": true,
+                    "name": "tableActions",
+                    "types": ["ObjectPage-TableAction"],
+                    "displayToUser": true,
+                    "visibility": "public"
+                },
+                "columns": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "columns",
+                    "multiple": true,
+                    "name": "columns",
+                    "types": ["ObjectPage-Column"],
+                    "defaultValue": [
+                        {
+                            "name": "ObjectPage-Column",
+                            "designProperties": {
+                                "isUndeletable": true
+                            }
+                        }
+                    ],
+                    "displayToUser": true,
+                    "visibility": "public",
+                    "contextProperty": "Items"
+                }
+            },
+            "designProperties": {
+                "isUndeletable": {
+                    "displayName": "isUndeletable",
+                    "name": "isUndeletable",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "displayToUser": false,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                }
+            },
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "Items": {
+                    "displayName": "Items",
+                    "name": "Items",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true,
+                    "isContextProperty": true
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--Table uicatalog-smartTemplates--Table-dims"
+        },
+        "description": "Table",
+        "displayName": "Table",
+        "displayToUser": true,
+        "diffName": "Title",
+        "groupName": "3 - Section Controls",
+        "name": "ObjectPage-Table"
+    },
+    "ObjectPage-FormElement": {
+        "additionalMetadata": {
+            "aggregations": {},
+            "associations": [],
+            "defaultAggregation": "",
+            "designProperties": {
+                "isUndeletable": {
+                    "displayName": "isUndeletable",
+                    "name": "isUndeletable",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "displayToUser": false,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                }
+            },
+            "properties": {
+                "Label": {
+                    "displayName": "Label",
+                    "name": "Label",
+                    "type": "string",
+                    "defaultValue": "Label",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                },
+                "Value": {
+                    "displayName": "Value",
+                    "name": "Value",
+                    "type": "string",
+                    "defaultValue": "Value",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                },
+                "Url": {
+                    "displayName": "Url",
+                    "name": "Url",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": true,
+                    "isDataDriven": true
+                },
+                "Nullable": {
+                    "displayName": "Mandatory",
+                    "name": "Nullable",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false,
+                    "possibleValues": [
+                        {
+                            "value": "true",
+                            "displayValue": "false"
+                        },
+                        {
+                            "value": "false",
+                            "displayValue": "true"
+                        }
+                    ],
+                    "defaultValue": "true"
+                },
+                "Updatable": {
+                    "displayName": "Read-Only",
+                    "name": "Updatable",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false,
+                    "possibleValues": [
+                        {
+                            "value": "true",
+                            "displayValue": "false"
+                        },
+                        {
+                            "value": "false",
+                            "displayValue": "true"
+                        }
+                    ],
+                    "defaultValue": "true"
+                },
+                "Currency": {
+                    "displayName": "Currency",
+                    "name": "Currency",
+                    "type": "string",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": true
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--FormElement uicatalog-smartTemplates--FormElement-dims"
+        },
+        "description": "FormElement",
+        "displayName": "Form element",
+        "displayToUser": true,
+        "diffName": "Label",
+        "groupName": "4 - Form Controls",
+        "name": "ObjectPage-FormElement"
+    },
+    "ObjectPage-FormGroup": {
+        "additionalMetadata": {
+            "aggregations": {
+                "formElements": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "form elements",
+                    "multiple": true,
+                    "name": "formElements",
+                    "types": ["ObjectPage-FormElement"],
+                    "displayToUser": true,
+                    "visibility": "public",
+                    "defaultValue": [
+                        {
+                            "name": "ObjectPage-FormElement",
+                            "designProperties": {
+                                "isUndeletable": true
+                            }
+                        }
+                    ]
+                }
+            },
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "Title": {
+                    "displayName": "Title",
+                    "name": "Title",
+                    "type": "string",
+                    "defaultValue": "Title",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                }
+            },
+            "designProperties": {
+                "isUndeletable": {
+                    "displayName": "isUndeletable",
+                    "name": "isUndeletable",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "displayToUser": false,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--FormGroup uicatalog-smartTemplates--FormGroup-dims"
+        },
+        "description": "FormGroup",
+        "displayName": "Form group",
+        "displayToUser": true,
+        "diffName": "Title",
+        "groupName": "4 - Form Controls",
+        "name": "ObjectPage-FormGroup"
+    },
+    "ObjectPage-Form": {
+        "additionalMetadata": {
+            "aggregations": {
+                "formGroups": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "form groups",
+                    "multiple": true,
+                    "name": "formGroups",
+                    "types": ["ObjectPage-FormGroup"],
+                    "defaultValue": [
+                        {
+                            "name": "ObjectPage-FormGroup"
+                        }
+                    ],
+                    "displayToUser": true,
+                    "visibility": "public"
+                }
+            },
+            "designProperties": {
+                "isUndeletable": {
+                    "displayName": "isUndeletable",
+                    "name": "isUndeletable",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "displayToUser": false,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                }
+            },
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {},
+            "iconClass": "uicatalog-smartTemplates--Form uicatalog-smartTemplates--Form-dims"
+        },
+        "description": "Form",
+        "displayName": "Form",
+        "displayToUser": true,
+        "diffName": "",
+        "groupName": "3 - Section Controls",
+        "name": "ObjectPage-Form"
+    },
+    "ObjectPage-Section": {
+        "additionalMetadata": {
+            "aggregations": {
+                "sectionContent": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "section content",
+                    "multiple": false,
+                    "name": "sectionContent",
+                    "types": ["ObjectPage-Table", "ObjectPage-Form"],
+                    "displayToUser": true,
+                    "visibility": "public"
+                }
+            },
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {
+                "Title": {
+                    "displayName": "Title",
+                    "name": "Title",
+                    "type": "string",
+                    "defaultValue": "Section title",
+                    "displayToUser": true,
+                    "isLinkProperty": false,
+                    "isDataDriven": false
+                }
+            },
+            "iconClass": "uicatalog-smartTemplates--Section uicatalog-smartTemplates--Section-dims"
+        },
+        "description": "Section",
+        "displayName": "Section",
+        "displayToUser": true,
+        "diffName": "Title",
+        "groupName": "1 - ObjectPage Controls",
+        "name": "ObjectPage-Section"
+    },
+    "ObjectPage-ObjectPage": {
+        "additionalMetadata": {
+            "aggregations": {
+                "headers": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "headers",
+                    "multiple": false,
+                    "name": "headers",
+                    "types": ["ObjectPage-Header"],
+                    "displayToUser": true,
+                    "visibility": "public"
+                },
+                "sections": {
+                    "altTypes": ["string"],
+                    "isDataDriven": false,
+                    "displayName": "sections",
+                    "multiple": true,
+                    "name": "sections",
+                    "types": ["ObjectPage-Section"],
+                    "displayToUser": true,
+                    "visibility": "public"
+                }
+            },
+            "associations": [],
+            "defaultAggregation": "",
+            "properties": {},
+            "iconClass": "uicatalog-smartTemplates--ObjectPage uicatalog-smartTemplates--ObjectPage-dims"
+        },
+        "description": "ObjectPage",
+        "displayName": "ObjectPage",
+        "displayToUser": false,
+        "diffName": "",
+        "groupName": "root Controls",
+        "name": "ObjectPage-ObjectPage"
+    }
+},
+    "floorPlans": {
+    "ListReport": {
+        "name": "ListReport",
+        "text": "List Report",
+        "isSmart": true,
+        "isRootFloorplan": true,
+        "description": "Create your own list report page by using this template.",
+        "iconClass": "image-list",
+        "designTemplate": {
+            "type": "ListReport-ListReport",
+            "template": {
+                "var": {
+                    "entityType": "sap.ui.model.odata.AnnotationHelper.gotoEntityType(entitySet>entityType)"
+                }
+            },
+            "properties": {},
+            "groups": {
+                "filterBars": {
+                    "type": "ListReport-FilterBar",
+                    "properties": {
+                        "AllowFreeSearch": {
+                            "model": "entitySet",
+                            "path": "Org.OData.Capabilities.V1.SearchRestrictions/Searchable/Bool",
+                            "static": true
+                        }
+                    },
+                    "groups": {
+                        "filters": {
+                            "type": "ListReport-Filter",
+                            "template": {
+                                "var": {
+                                    "selectionField": "repeat",
+                                    "descriptionGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(selectionField>PropertyPath)"
+                                },
+                                "repeat": "entityType>com.sap.vocabularies.UI.v1.SelectionFields"
+                            },
+                            "properties": {
+                                "FilterOn": {
+                                    "path": "PropertyPath",
+                                    "model": "selectionField"
+                                },
+                                "Description": {
+                                    "model": "descriptionGeneratedVar",
+                                    "path": "sap:label",
+                                    "static": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "tables": {
+                    "type": "ListReport-Table",
+                    "template": {
+                        "var": {
+                            "header": "meta>com.sap.vocabularies.UI.v1.HeaderInfo"
+                        }
+                    },
+                    "properties": {
+                        "Title": {
+                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                            "model": "header",
+                            "path": "TypeNamePlural",
+                            "static": true
+                        }
+                    },
+                    "groups": {
+                        "actionButtons": {
+                            "type": "ListReport-ActionButton",
+                            "template": {
+                                "var": {
+                                    "dataField": "repeat",
+                                    "action": "sap.ui.model.odata.AnnotationHelper.gotoFunctionImport(dataField>Action)"
+                                },
+                                "repeat": "meta>com.sap.vocabularies.UI.v1.LineItem",
+                                "conditions": [],
+                                "repeatType": "com.sap.vocabularies.UI.v1.DataFieldForAction"
+                            },
+                            "properties": {
+                                "Label": {
+                                    "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                    "model": "dataField",
+                                    "path": "Label",
+                                    "static": true
+                                },
+                                "Importance": {
+                                    "path": "com.sap.vocabularies.UI.v1.Importance/EnumMember",
+                                    "model": "dataField",
+                                    "static": true
+                                }
+                            }
+                        },
+                        "columns": {
+                            "type": "ListReport-Column",
+                            "template": {
+                                "var": {
+                                    "dataField": "repeat",
+                                    "target": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>)",
+                                    "dataFieldValue": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                    "additionalValueGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                    "listEntitySet": "entitySet>",
+                                    "collection": "meta>com.sap.vocabularies.UI.v1.LineItem"
+                                },
+                                "repeat": "collection>",
+                                "conditions": [
+                                    {
+                                        "type": "if",
+                                        "target": "collection>AnnotationType",
+                                        "value": "com.sap.vocabularies.UI.v1.LineItem"
+                                    }
+                                ],
+                                "termInfo": {
+                                    "collection": "com.sap.vocabularies.UI.v1.LineItem"
+                                }
+                            },
+                            "properties": {
+                                "Importance": {
+                                    "path": "com.sap.vocabularies.UI.v1.Importance/EnumMember",
+                                    "model": "target",
+                                    "static": true
+                                },
+                                "Currency": {
+                                    "path": "Org.OData.Measures.V1.ISOCurrency",
+                                    "model": "dataFieldValue"
+                                },
+                                "Title": {
+                                    "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                    "model": "dataField",
+                                    "path": "Label",
+                                    "static": true
+                                },
+                                "AdditionalValue": {
+                                    "path": "com.sap.vocabularies.Common.v1.Text",
+                                    "model": "additionalValueGeneratedVar"
+                                },
+                                "Url": {
+                                    "path": "Url",
+                                    "model": "dataField"
+                                },
+                                "Value": {
+                                    "path": "Value",
+                                    "model": "dataField"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "templateName": "sap.suite.ui.generic.template.ListReport",
+        "thumbnail": "data:image/png;base64,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",
+        "controls": {
+            "name": "ListReport",
+            "rootControlId": "root-ListReport-ListReport-Id",
+            "controls": [
+                {
+                    "controlId": "root-ListReport-ListReport-Id",
+                    "parentControlId": null,
+                    "catalogControlName": "ListReport-ListReport",
+                    "events": [],
+                    "groups": [
+                        {
+                            "groupId": "filterBars",
+                            "binding": {
+                                "filterOptions": [],
+                                "sortOptions": [],
+                                "paths": []
+                            },
+                            "children": ["np-ListReport-FilterBar-2"]
+                        },
+                        {
+                            "groupId": "tables",
+                            "binding": {
+                                "filterOptions": [],
+                                "sortOptions": [],
+                                "paths": []
+                            },
+                            "children": ["np-ListReport-Table-1"]
+                        }
+                    ],
+                    "floorplanProperties": [],
+                    "designProperties": [],
+                    "properties": []
+                },
+                {
+                    "catalogControlName": "ListReport-Table",
+                    "controlId": "np-ListReport-Table-1",
+                    "parentControlId": "root-ListReport-ListReport-Id",
+                    "parentGroupId": "tables",
+                    "parentGroupIndex": 0,
+                    "groups": [
+                        {
+                            "groupId": "actionButtons",
+                            "children": []
+                        },
+                        {
+                            "groupId": "columns",
+                            "children": ["np-ListReport-Column-4", "np-ListReport-Column-40"]
+                        }
+                    ],
+                    "properties": [
+                        {
+                            "name": "Title",
+                            "value": "Objects",
+                            "type": "string"
+                        }
+                    ],
+                    "designProperties": [],
+                    "floorplanProperties": [],
+                    "events": []
+                },
+                {
+                    "catalogControlName": "ListReport-FilterBar",
+                    "controlId": "np-ListReport-FilterBar-2",
+                    "parentControlId": "root-ListReport-ListReport-Id",
+                    "parentGroupId": "filterBars",
+                    "parentGroupIndex": 0,
+                    "groups": [
+                        {
+                            "groupId": "filters",
+                            "children": ["np-ListReport-Filter-3"]
+                        }
+                    ],
+                    "properties": [
+                        {
+                            "name": "AllowFreeSearch",
+                            "value": "true",
+                            "type": "string"
+                        }
+                    ],
+                    "designProperties": [],
+                    "floorplanProperties": [],
+                    "events": []
+                },
+                {
+                    "catalogControlName": "ListReport-Filter",
+                    "controlId": "np-ListReport-Filter-3",
+                    "parentControlId": "np-ListReport-FilterBar-2",
+                    "parentGroupId": "filters",
+                    "parentGroupIndex": 0,
+                    "groups": [],
+                    "properties": [
+                        {
+                            "name": "Description",
+                            "value": "Filter 1",
+                            "type": "string"
+                        },
+                        {
+                            "name": "FilterOn",
+                            "value": "prop1",
+                            "type": "string"
+                        }
+                    ],
+                    "designProperties": [
+                        {
+                            "name": "isUndeletable",
+                            "value": true,
+                            "type": "boolean"
+                        }
+                    ],
+                    "floorplanProperties": [],
+                    "events": []
+                },
+                {
+                    "catalogControlName": "ListReport-Column",
+                    "controlId": "np-ListReport-Column-4",
+                    "parentControlId": "np-ListReport-Table-1",
+                    "parentGroupId": "columns",
+                    "parentGroupIndex": 0,
+                    "groups": [],
+                    "properties": [
+                        {
+                            "name": "Title",
+                            "value": "Column 1",
+                            "type": "string"
+                        },
+                        {
+                            "name": "Value",
+                            "value": "Column 1 value",
+                            "type": "string"
+                        },
+                        {
+                            "name": "Currency",
+                            "type": "string"
+                        },
+                        {
+                            "name": "Url",
+                            "type": "string"
+                        },
+                        {
+                            "name": "AdditionalValue",
+                            "type": "string"
+                        },
+                        {
+                            "name": "Importance",
+                            "value": "High",
+                            "type": "string"
+                        }
+                    ],
+                    "designProperties": [
+                        {
+                            "name": "isUndeletable",
+                            "value": true,
+                            "type": "boolean"
+                        }
+                    ],
+                    "floorplanProperties": [],
+                    "events": []
+                },
+                {
+                    "catalogControlName": "ListReport-Column",
+                    "controlId": "np-ListReport-Column-40",
+                    "parentControlId": "np-ListReport-Table-1",
+                    "parentGroupId": "columns",
+                    "parentGroupIndex": 1,
+                    "groups": [],
+                    "properties": [
+                        {
+                            "name": "Title",
+                            "value": "Column 2",
+                            "type": "string"
+                        },
+                        {
+                            "name": "Value",
+                            "value": "Column 2 value",
+                            "type": "string"
+                        },
+                        {
+                            "name": "Currency",
+                            "type": "string"
+                        },
+
+                        {
+                            "name": "Url",
+                            "type": "string"
+                        },
+                        {
+                            "name": "AdditionalValue",
+                            "value": "value 2",
+                            "type": "string"
+                        },
+                        {
+                            "name": "Importance",
+                            "value": "Low",
+                            "type": "string"
+                        }
+                    ],
+                    "designProperties": [],
+                    "floorplanProperties": [],
+                    "events": []
+                }
+            ]
+        }
+    },
+    "ObjectPage": {
+        "name": "ObjectPage",
+        "isSmart": true,
+        "isRootFloorplan": false,
+        "text": "Object Page Smart Template",
+        "description": "ObjectPage Smart Template",
+        "iconClass": "image-page",
+        "designTemplate": {
+            "type": "ObjectPage-ObjectPage",
+            "properties": {},
+            "groups": {
+                "headers": {
+                    "type": "ObjectPage-Header",
+                    "properties": {
+                        "Title": {
+                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                            "model": "",
+                            "path": "com.sap.vocabularies.UI.v1.HeaderInfo/Title/Value"
+                        },
+                        "Description": {
+                            "model": "",
+                            "path": "com.sap.vocabularies.UI.v1.HeaderInfo/Description/Value"
+                        },
+                        "ImageSource": {
+                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                            "model": "",
+                            "path": "com.sap.vocabularies.UI.v1.HeaderInfo/ImageUrl"
+                        },
+                        "HeaderBarText": {
+                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                            "model": "",
+                            "path": "com.sap.vocabularies.UI.v1.HeaderInfo/TypeName"
+                        }
+                    },
+                    "groups": {
+                        "actionButtons": {
+                            "type": "ObjectPage-ActionButton",
+                            "template": {
+                                "var": {
+                                    "dataField": "repeat"
+                                },
+                                "repeat": "meta>com.sap.vocabularies.UI.v1.Identification",
+                                "conditions": [],
+                                "repeatType": "com.sap.vocabularies.UI.v1.DataFieldForAction"
+                            },
+                            "properties": {
+                                "Label": {
+                                    "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                    "model": "dataField",
+                                    "path": "Label",
+                                    "static": true
+                                }
+                            }
+                        },
+                        "kPIs": {
+                            "type": "ObjectPage-KPI",
+                            "template": {
+                                "var": {
+                                    "dataPoint": "repeat",
+                                    "currencyGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataPoint>Value)"
+                                },
+                                "repeat": "meta>",
+                                "conditions": [],
+                                "repeatType": "com.sap.vocabularies.UI.v1.DataPoint"
+                            },
+                            "properties": {
+                                "Title": {
+                                    "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                    "model": "dataPoint",
+                                    "path": "Title",
+                                    "static": true
+                                },
+                                "Value": {
+                                    "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                    "model": "dataPoint",
+                                    "path": "Value"
+                                },
+                                "Currency": {
+                                    "path": "Org.OData.Measures.V1.ISOCurrency",
+                                    "model": "currencyGeneratedVar"
+                                }
+                            }
+                        }
+                    }
+                },
+                "sections": {
+                    "type": "ObjectPage-Section",
+                    "template": {
+                        "var": {
+                            "facets": "meta>com.sap.vocabularies.UI.v1.Facets",
+                            "facet": "repeat"
+                        },
+                        "repeat": "facets>"
+                    },
+                    "properties": {
+                        "Title": {
+                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                            "model": "facet",
+                            "path": "Label",
+                            "static": true
+                        }
+                    },
+                    "groups": {
+                        "tables": {
+                            "type": "ObjectPage-Table",
+                            "template": {
+                                "var": {
+                                    "target": "facet>Target",
+                                    "subEntitySet": "sap.suite.ui.generic.template.js.AnnotationHelper.getEntitySetOfPath(target>)",
+                                    "listEntitySet": "sap.ui.model.odata.AnnotationHelper.gotoEntitySet(target>)",
+                                    "collection": "sap.ui.model.odata.AnnotationHelper.resolvePath(target>)"
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "if",
+                                        "test": "{path: 'facet>Target', formatter: 'sap.ui.model.odata.AnnotationHelper.isMultiple'}"
+                                    }
+                                ]
+                            },
+                            "properties": {
+                                "Items": {
+                                    "formatter": "sap.ui.model.odata.AnnotationHelper.getNavigationPath",
+                                    "model": "target",
+                                    "path": "",
+                                    "attribute": "EntityPath"
+                                }
+                            },
+                            "groups": {
+                                "tableActions": {
+                                    "type": "ObjectPage-TableAction",
+                                    "template": {
+                                        "var": {
+                                            "dataField": "repeat",
+                                            "action": "sap.ui.model.odata.AnnotationHelper.gotoFunctionImport(dataField>Action)"
+                                        },
+                                        "repeat": "collection>",
+                                        "conditions": [],
+                                        "repeatType": "com.sap.vocabularies.UI.v1.DataFieldForAction"
+                                    },
+                                    "properties": {
+                                        "Label": {
+                                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                            "model": "dataField",
+                                            "path": "Label"
+                                        },
+                                        "Importance": {
+                                            "path": "com.sap.vocabularies.UI.v1.Importance/EnumMember",
+                                            "model": "dataField",
+                                            "static": true
+                                        }
+                                    }
+                                },
+                                "columns": {
+                                    "type": "ObjectPage-Column",
+                                    "template": {
+                                        "var": {
+                                            "dataField": "repeat",
+                                            "target": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>)",
+                                            "dataFieldValue": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                            "additionalValueGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)"
+                                        },
+                                        "repeat": "collection>",
+                                        "conditions": [
+                                            {
+                                                "type": "if",
+                                                "target": "collection>AnnotationType",
+                                                "value": "com.sap.vocabularies.UI.v1.LineItem"
+                                            }
+                                        ],
+                                        "termInfo": {
+                                            "collection": "com.sap.vocabularies.UI.v1.LineItem"
+                                        }
+                                    },
+                                    "properties": {
+                                        "Importance": {
+                                            "path": "com.sap.vocabularies.UI.v1.Importance/EnumMember",
+                                            "model": "target",
+                                            "static": true
+                                        },
+                                        "Currency": {
+                                            "path": "Org.OData.Measures.V1.ISOCurrency",
+                                            "model": "dataFieldValue"
+                                        },
+                                        "Title": {
+                                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                            "model": "dataField",
+                                            "path": "Label",
+                                            "static": true
+                                        },
+                                        "AdditionalValue": {
+                                            "path": "com.sap.vocabularies.Common.v1.Text",
+                                            "model": "additionalValueGeneratedVar"
+                                        },
+                                        "Url": {
+                                            "path": "Url",
+                                            "model": "dataField"
+                                        },
+                                        "Value": {
+                                            "path": "Value",
+                                            "model": "dataField"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "forms": {
+                            "type": "ObjectPage-Form",
+                            "template": {
+                                "conditions": [
+                                    {
+                                        "type": "else"
+                                    }
+                                ]
+                            },
+                            "properties": {},
+                            "groups": {
+                                "formGroups": {
+                                    "type": "ObjectPage-FormGroup",
+                                    "template": {
+                                        "var": {
+                                            "groupFacet": "repeat",
+                                            "target": "sap.ui.model.odata.AnnotationHelper.resolvePath(groupFacet>Target)"
+                                        },
+                                        "repeat": "facet>Facets",
+                                        "conditions": [
+                                            {
+                                                "type": "if",
+                                                "target": "target>AnnotationType",
+                                                "value": "com.sap.vocabularies.UI.v1.FieldGroup"
+                                            }
+                                        ],
+                                        "termInfo": {
+                                            "target": "com.sap.vocabularies.UI.v1.FieldGroup"
+                                        }
+                                    },
+                                    "properties": {
+                                        "Title": {
+                                            "model": "groupFacet",
+                                            "path": "Label",
+                                            "static": true
+                                        }
+                                    },
+                                    "groups": {
+                                        "formElements": {
+                                            "type": "ObjectPage-FormElement",
+                                            "template": {
+                                                "var": {
+                                                    "labelGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                                    "nullableGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                                    "currencyGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                                    "updatableGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                                    "dataField": "repeat"
+                                                },
+                                                "repeat": "target>Data"
+                                            },
+                                            "properties": {
+                                                "Label": {
+                                                    "path": "sap:label",
+                                                    "model": "labelGeneratedVar",
+                                                    "static": true
+                                                },
+                                                "Value": {
+                                                    "path": "Value",
+                                                    "model": "dataField"
+                                                },
+                                                "Url": {
+                                                    "path": "Url",
+                                                    "model": "dataField"
+                                                },
+                                                "Nullable": {
+                                                    "path": "sap:nullable",
+                                                    "model": "nullableGeneratedVar",
+                                                    "static": true
+                                                },
+                                                "Currency": {
+                                                    "path": "Org.OData.Measures.V1.ISOCurrency",
+                                                    "model": "currencyGeneratedVar"
+                                                },
+                                                "Updatable": {
+                                                    "path": "sap:updatable",
+                                                    "model": "updatableGeneratedVar",
+                                                    "static": true
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "templateName": "sap.suite.ui.generic.template.ObjectPage",
+        "thumbnail": "data:image/png;base64,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",
+        "controls": {
+            "name": "ObjectPage",
+            "rootControlId": "root-ObjectPage-ObjectPage-Id",
+            "controls": [
+                {
+                    "controlId": "root-ObjectPage-ObjectPage-Id",
+                    "parentControlId": null,
+                    "catalogControlName": "ObjectPage-ObjectPage",
+                    "events": [],
+                    "groups": [
+                        {
+                            "groupId": "headers",
+                            "binding": {
+                                "filterOptions": [],
+                                "sortOptions": [],
+                                "paths": []
+                            },
+                            "children": ["np-ObjectPage-Header-1436773368627-00J"]
+                        },
+                        {
+                            "groupId": "sections",
+                            "binding": {
+                                "filterOptions": [],
+                                "sortOptions": [],
+                                "paths": []
+                            },
+                            "children": ["np-ObjectPage-Section-1436773373402-00R", "np-ObjectPage-Section-1436773371369-00N"]
+                        }
+                    ],
+                    "floorplanProperties": [],
+                    "designProperties": [],
+                    "properties": []
+                },
+                {
+                    "catalogControlName": "ObjectPage-Header",
+                    "controlId": "np-ObjectPage-Header-1436773368627-00J",
+                    "parentControlId": "root-ObjectPage-ObjectPage-Id",
+                    "parentGroupId": "headers",
+                    "parentGroupIndex": 0,
+                    "events": [],
+                    "groups": [
+                        {
+                            "groupId": "actionButtons",
+                            "binding": {
+                                "filterOptions": [],
+                                "sortOptions": [],
+                                "paths": []
+                            },
+                            "children": []
+                        },
+                        {
+                            "groupId": "kPIs",
+                            "binding": {
+                                "filterOptions": [],
+                                "sortOptions": [],
+                                "paths": []
+                            },
+                            "children": ["np-ObjectPage-KPI-1436773404272-00V"]
+                        }
+                    ],
+                    "floorplanProperties": [],
+                    "designProperties": [],
+                    "properties": [
+                        {
+                            "name": "HeaderBarText",
+                            "value": "New Page",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Title",
+                            "value": "Title",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Description",
+                            "value": "Description",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "ImageSource",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        }
+
+                    ]
+                },
+                {
+                    "catalogControlName": "ObjectPage-Section",
+                    "controlId": "np-ObjectPage-Section-1436773371369-00N",
+                    "parentControlId": "root-ObjectPage-ObjectPage-Id",
+                    "parentGroupId": "sections",
+                    "parentGroupIndex": 1,
+                    "events": [],
+                    "groups": [
+                        {
+                            "groupId": "sectionContent",
+                            "binding": {
+                                "filterOptions": [],
+                                "sortOptions": [],
+                                "paths": []
+                            },
+                            "children": ["np-ObjectPage-Table-1436773499310-017"]
+                        }
+                    ],
+                    "floorplanProperties": [],
+                    "designProperties": [],
+                    "properties": [
+                        {
+                            "name": "Title",
+                            "value": "Second section",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "catalogControlName": "ObjectPage-Section",
+                    "controlId": "np-ObjectPage-Section-1436773373402-00R",
+                    "parentControlId": "root-ObjectPage-ObjectPage-Id",
+                    "parentGroupId": "sections",
+                    "parentGroupIndex": 0,
+                    "events": [],
+                    "groups": [
+                        {
+                            "groupId": "sectionContent",
+                            "binding": {
+                                "filterOptions": [],
+                                "sortOptions": [],
+                                "paths": []
+                            },
+                            "children": ["np-ObjectPage-Form-1436773446814-00X"]
+                        }
+                    ],
+                    "floorplanProperties": [],
+                    "designProperties": [],
+                    "properties": [
+                        {
+                            "name": "Title",
+                            "value": "First Section",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "catalogControlName": "ObjectPage-KPI",
+                    "controlId": "np-ObjectPage-KPI-1436773404272-00V",
+                    "parentControlId": "np-ObjectPage-Header-1436773368627-00J",
+                    "parentGroupId": "kPIs",
+                    "parentGroupIndex": 0,
+                    "events": [],
+                    "groups": [],
+                    "floorplanProperties": [],
+                    "designProperties": [],
+                    "properties": [
+                        {
+                            "name": "Title",
+                            "value": "KPI Title",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Value",
+                            "value": "0.00",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Currency",
+                            "value": "Unit",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "catalogControlName": "ObjectPage-Form",
+                    "controlId": "np-ObjectPage-Form-1436773446814-00X",
+                    "parentControlId": "np-ObjectPage-Section-1436773373402-00R",
+                    "parentGroupId": "sectionContent",
+                    "parentGroupIndex": 0,
+                    "events": [],
+                    "groups": [
+                        {
+                            "groupId": "formGroups",
+                            "binding": {
+                                "filterOptions": [],
+                                "sortOptions": [],
+                                "paths": []
+                            },
+                            "children": ["np-ObjectPage-FormGroup-1436773452446-010"]
+                        }
+                    ],
+                    "floorplanProperties": [],
+                    "designProperties": [],
+                    "properties": []
+                },
+                {
+                    "catalogControlName": "ObjectPage-FormGroup",
+                    "controlId": "np-ObjectPage-FormGroup-1436773452446-010",
+                    "parentControlId": "np-ObjectPage-Form-1436773446814-00X",
+                    "parentGroupId": "formGroups",
+                    "parentGroupIndex": 0,
+                    "events": [],
+                    "groups": [
+                        {
+                            "groupId": "formElements",
+                            "binding": {
+                                "filterOptions": [],
+                                "sortOptions": [],
+                                "paths": []
+                            },
+                            "children": ["np-ObjectPage-FormElement-1436773463939-015", "np-ObjectPage-FormElement-1436773461753-013"]
+                        }
+                    ],
+                    "floorplanProperties": [],
+                    "designProperties": [
+                        {
+                            "name": "isUndeletable",
+                            "value": true,
+                            "type": "boolean"
+                        }
+                    ],
+                    "properties": [
+                        {
+                            "name": "Title",
+                            "value": "Group 1",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "catalogControlName": "ObjectPage-FormElement",
+                    "controlId": "np-ObjectPage-FormElement-1436773461753-013",
+                    "parentControlId": "np-ObjectPage-FormGroup-1436773452446-010",
+                    "parentGroupId": "formElements",
+                    "parentGroupIndex": 1,
+                    "events": [],
+                    "groups": [],
+                    "floorplanProperties": [],
+                    "designProperties": [],
+                    "properties": [
+                        {
+                            "name": "Label",
+                            "value": "Label 2",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Value",
+                            "value": "Value 2",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Url",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Currency",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Nullable",
+                            "type": "string",
+                            "value": "true",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Updatable",
+                            "type": "string",
+                            "value": "true",
+                            "binding": {
+                                "paths": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "catalogControlName": "ObjectPage-FormElement",
+                    "controlId": "np-ObjectPage-FormElement-1436773463939-015",
+                    "parentControlId": "np-ObjectPage-FormGroup-1436773452446-010",
+                    "parentGroupId": "formElements",
+                    "parentGroupIndex": 0,
+                    "events": [],
+                    "groups": [],
+                    "floorplanProperties": [],
+                    "designProperties": [
+                        {
+                            "name": "isUndeletable",
+                            "value": true,
+                            "type": "boolean"
+                        }
+                    ],
+                    "properties": [
+                        {
+                            "name": "Label",
+                            "value": "Label 1",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Value",
+                            "value": "Value 1",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Url",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Currency",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Nullable",
+                            "type": "string",
+                            "value": "true",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Updatable",
+                            "type": "string",
+                            "value": "true",
+                            "binding": {
+                                "paths": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "catalogControlName": "ObjectPage-Table",
+                    "controlId": "np-ObjectPage-Table-1436773499310-017",
+                    "parentControlId": "np-ObjectPage-Section-1436773371369-00N",
+                    "parentGroupId": "sectionContent",
+                    "parentGroupIndex": 0,
+                    "events": [],
+                    "groups": [
+                        {
+                            "groupId": "tableActions",
+                            "binding": {
+                                "filterOptions": [],
+                                "sortOptions": [],
+                                "paths": []
+                            },
+                            "children": []
+                        },
+                        {
+                            "groupId": "columns",
+                            "binding": {
+                                "filterOptions": [],
+                                "sortOptions": [],
+                                "paths": []
+                            },
+                            "children": ["np-ObjectPage-Column-1436773531738-01F", "np-ObjectPage-Column-1436773529115-01D"]
+                        }
+                    ],
+                    "floorplanProperties": [],
+                    "designProperties": [],
+                    "properties": [
+                        {
+                            "name": "Items",
+                            "value": "Items",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "catalogControlName": "ObjectPage-Column",
+                    "controlId": "np-ObjectPage-Column-1436773529115-01D",
+                    "parentControlId": "np-ObjectPage-Table-1436773499310-017",
+                    "parentGroupId": "columns",
+                    "parentGroupIndex": 1,
+                    "events": [],
+                    "groups": [],
+                    "floorplanProperties": [],
+                    "designProperties": [],
+                    "properties": [
+                        {
+                            "name": "Title",
+                            "value": "Column 2",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Value",
+                            "value": "Column 2 Value",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+
+                        {
+                            "name": "Currency",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Url",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "AdditionalValue",
+                            "value": "Value 2",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Importance",
+                            "value": "Low",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "catalogControlName": "ObjectPage-Column",
+                    "controlId": "np-ObjectPage-Column-1436773531738-01F",
+                    "parentControlId": "np-ObjectPage-Table-1436773499310-017",
+                    "parentGroupId": "columns",
+                    "parentGroupIndex": 0,
+                    "events": [],
+                    "groups": [],
+                    "floorplanProperties": [],
+                    "designProperties": [
+                        {
+                            "name": "isUndeletable",
+                            "value": true,
+                            "type": "boolean"
+                        }
+                    ],
+                    "properties": [
+                        {
+                            "name": "Title",
+                            "value": "Column 1",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Value",
+                            "value": "Column 1 Value",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Currency",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+
+
+                        {
+                            "name": "Url",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "AdditionalValue",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        },
+                        {
+                            "name": "Importance",
+                            "value": "High",
+                            "type": "string",
+                            "binding": {
+                                "paths": []
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}}

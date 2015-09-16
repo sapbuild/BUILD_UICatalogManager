@@ -1,0 +1,475 @@
+{ "controls": [
+    {
+        "controlId": "root-ObjectPage-ObjectPage-Id",
+        "parentControlId": null,
+        "catalogControlName": "ObjectPage-ObjectPage",
+        "events": [],
+        "groups": [
+            {
+                "groupId": "headers",
+                "binding": {
+                    "filterOptions": [],
+                    "sortOptions": [],
+                    "paths": []
+                },
+                "children": ["np-ObjectPage-Header-1436773368627-00J"]
+            },
+            {
+                "groupId": "sections",
+                "binding": {
+                    "filterOptions": [],
+                    "sortOptions": [],
+                    "paths": []
+                },
+                "children": ["np-ObjectPage-Section-1436773373402-00R", "np-ObjectPage-Section-1436773371369-00N"]
+            }
+        ],
+        "floorplanProperties": [],
+        "designProperties": [],
+        "properties": []
+    },
+    {
+        "catalogControlName": "ObjectPage-Header",
+        "controlId": "np-ObjectPage-Header-1436773368627-00J",
+        "parentControlId": "root-ObjectPage-ObjectPage-Id",
+        "parentGroupId": "headers",
+        "parentGroupIndex": 0,
+        "events": [],
+        "groups": [
+            {
+                "groupId": "actionButtons",
+                "binding": {
+                    "filterOptions": [],
+                    "sortOptions": [],
+                    "paths": []
+                },
+                "children": []
+            },
+            {
+                "groupId": "kPIs",
+                "binding": {
+                    "filterOptions": [],
+                    "sortOptions": [],
+                    "paths": []
+                },
+                "children": ["np-ObjectPage-KPI-1436773404272-00V"]
+            }
+        ],
+        "floorplanProperties": [],
+        "designProperties": [],
+        "properties": [
+            {
+                "name": "Title",
+                "value": "Title",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Description",
+                "value": "Description",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "ImageSource",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "headerBarText",
+                "value": "New Page",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            }
+        ]
+    },
+    {
+        "catalogControlName": "ObjectPage-Section",
+        "controlId": "np-ObjectPage-Section-1436773371369-00N",
+        "parentControlId": "root-ObjectPage-ObjectPage-Id",
+        "parentGroupId": "sections",
+        "parentGroupIndex": 1,
+        "events": [],
+        "groups": [
+            {
+                "groupId": "sectionContent",
+                "binding": {
+                    "filterOptions": [],
+                    "sortOptions": [],
+                    "paths": []
+                },
+                "children": ["np-ObjectPage-Table-1436773499310-017"]
+            }
+        ],
+        "floorplanProperties": [],
+        "designProperties": [],
+        "properties": [
+            {
+                "name": "Title",
+                "value": "Second section",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            }
+        ]
+    },
+    {
+        "catalogControlName": "ObjectPage-Section",
+        "controlId": "np-ObjectPage-Section-1436773373402-00R",
+        "parentControlId": "root-ObjectPage-ObjectPage-Id",
+        "parentGroupId": "sections",
+        "parentGroupIndex": 0,
+        "events": [],
+        "groups": [
+            {
+                "groupId": "sectionContent",
+                "binding": {
+                    "filterOptions": [],
+                    "sortOptions": [],
+                    "paths": []
+                },
+                "children": ["np-ObjectPage-Form-1436773446814-00X"]
+            }
+        ],
+        "floorplanProperties": [],
+        "designProperties": [],
+        "properties": [
+            {
+                "name": "Title",
+                "value": "First Section",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            }
+        ]
+    },
+    {
+        "catalogControlName": "ObjectPage-KPI",
+        "controlId": "np-ObjectPage-KPI-1436773404272-00V",
+        "parentControlId": "np-ObjectPage-Header-1436773368627-00J",
+        "parentGroupId": "kPIs",
+        "parentGroupIndex": 0,
+        "events": [],
+        "groups": [],
+        "floorplanProperties": [],
+        "designProperties": [],
+        "properties": [
+            {
+                "name": "Title",
+                "value": "KPI Title",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Value",
+                "value": "0.00",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Currency",
+                "value": "Unit",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            }
+        ]
+    },
+    {
+        "catalogControlName": "ObjectPage-Form",
+        "controlId": "np-ObjectPage-Form-1436773446814-00X",
+        "parentControlId": "np-ObjectPage-Section-1436773373402-00R",
+        "parentGroupId": "sectionContent",
+        "parentGroupIndex": 0,
+        "events": [],
+        "groups": [
+            {
+                "groupId": "formGroups",
+                "binding": {
+                    "filterOptions": [],
+                    "sortOptions": [],
+                    "paths": []
+                },
+                "children": ["np-ObjectPage-FormGroup-1436773452446-010"]
+            }
+        ],
+        "floorplanProperties": [],
+        "designProperties": [],
+        "properties": []
+    },
+    {
+        "catalogControlName": "ObjectPage-FormGroup",
+        "controlId": "np-ObjectPage-FormGroup-1436773452446-010",
+        "parentControlId": "np-ObjectPage-Form-1436773446814-00X",
+        "parentGroupId": "formGroups",
+        "parentGroupIndex": 0,
+        "events": [],
+        "groups": [
+            {
+                "groupId": "formElements",
+                "binding": {
+                    "filterOptions": [],
+                    "sortOptions": [],
+                    "paths": []
+                },
+                "children": ["np-ObjectPage-FormElement-1436773463939-015", "np-ObjectPage-FormElement-1436773461753-013"]
+            }
+        ],
+        "floorplanProperties": [],
+        "designProperties": [],
+        "properties": [
+            {
+                "name": "Title",
+                "value": "Group 1",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            }
+        ]
+    },
+    {
+        "catalogControlName": "ObjectPage-FormElement",
+        "controlId": "np-ObjectPage-FormElement-1436773461753-013",
+        "parentControlId": "np-ObjectPage-FormGroup-1436773452446-010",
+        "parentGroupId": "formElements",
+        "parentGroupIndex": 1,
+        "events": [],
+        "groups": [],
+        "floorplanProperties": [],
+        "designProperties": [],
+        "properties": [
+            {
+                "name": "Value",
+                "value": "Value 2",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Label",
+                "value": "Label 2",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Url",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            }
+        ]
+    },
+    {
+        "catalogControlName": "ObjectPage-FormElement",
+        "controlId": "np-ObjectPage-FormElement-1436773463939-015",
+        "parentControlId": "np-ObjectPage-FormGroup-1436773452446-010",
+        "parentGroupId": "formElements",
+        "parentGroupIndex": 0,
+        "events": [],
+        "groups": [],
+        "floorplanProperties": [],
+        "designProperties": [],
+        "properties": [
+            {
+                "name": "Value",
+                "value": "Value 1",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Label",
+                "value": "Label 1",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Url",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            }
+        ]
+    },
+    {
+        "catalogControlName": "ObjectPage-Table",
+        "controlId": "np-ObjectPage-Table-1436773499310-017",
+        "parentControlId": "np-ObjectPage-Section-1436773371369-00N",
+        "parentGroupId": "sectionContent",
+        "parentGroupIndex": 0,
+        "events": [],
+        "groups": [
+            {
+                "groupId": "tableActions",
+                "binding": {
+                    "filterOptions": [],
+                    "sortOptions": [],
+                    "paths": []
+                },
+                "children": []
+            },
+            {
+                "groupId": "columns",
+                "binding": {
+                    "filterOptions": [],
+                    "sortOptions": [],
+                    "paths": []
+                },
+                "children": ["np-ObjectPage-Column-1436773531738-01F", "np-ObjectPage-Column-1436773529115-01D"]
+            }
+        ],
+        "floorplanProperties": [],
+        "designProperties": [],
+        "properties": [
+            {
+                "name": "Items",
+                "value": "Items",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            }
+        ]
+    },
+    {
+        "catalogControlName": "ObjectPage-Column",
+        "controlId": "np-ObjectPage-Column-1436773529115-01D",
+        "parentControlId": "np-ObjectPage-Table-1436773499310-017",
+        "parentGroupId": "columns",
+        "parentGroupIndex": 1,
+        "events": [],
+        "groups": [],
+        "floorplanProperties": [],
+        "designProperties": [],
+        "properties": [
+            {
+                "name": "Importance",
+                "value": "Low",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Currency",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Title",
+                "value": "Column 2",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "AdditionalValue",
+                "value": "Value 2",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Url",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Value",
+                "value": "Column 2 Value",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            }
+        ]
+    },
+    {
+        "catalogControlName": "ObjectPage-Column",
+        "controlId": "np-ObjectPage-Column-1436773531738-01F",
+        "parentControlId": "np-ObjectPage-Table-1436773499310-017",
+        "parentGroupId": "columns",
+        "parentGroupIndex": 0,
+        "events": [],
+        "groups": [],
+        "floorplanProperties": [],
+        "designProperties": [],
+        "properties": [
+            {
+                "name": "Importance",
+                "value": "High",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Currency",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Title",
+                "value": "Column 1",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "AdditionalValue",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Url",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            },
+            {
+                "name": "Value",
+                "value": "Column 1 Value",
+                "type": "string",
+                "binding": {
+                    "paths": []
+                }
+            }
+        ]
+    }
+]}

@@ -1,0 +1,187 @@
+{
+    "controls": [
+        {
+            "controlId": "root-ListReport-ListReport-Id",
+            "parentControlId": null,
+            "catalogControlName": "ListReport-ListReport",
+            "events": [],
+            "groups": [
+                {
+                    "groupId": "filterBars",
+                    "binding": {
+                        "filterOptions": [],
+                        "sortOptions": [],
+                        "paths": []
+                    },
+                    "children": ["np-ListReport-FilterBar-2"]
+                },
+                {
+                    "groupId": "tables",
+                    "binding": {
+                        "filterOptions": [],
+                        "sortOptions": [],
+                        "paths": []
+                    },
+                    "children": ["np-ListReport-Table-1"]
+                }
+            ],
+            "floorplanProperties": [],
+            "designProperties": [],
+            "properties": []
+        },
+        {
+            "catalogControlName": "ListReport-Table",
+            "controlId": "np-ListReport-Table-1",
+            "parentControlId": "root-ListReport-ListReport-Id",
+            "parentGroupId": "tables",
+            "parentGroupIndex": 0,
+            "groups": [
+                {
+                    "groupId": "actionButtons",
+                    "children": []
+                },
+                {
+                    "groupId": "columns",
+                    "children": ["np-ListReport-Column-4", "np-ListReport-Column-40"]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "Title",
+                    "value": "Objects",
+                    "type": "string"
+                }
+            ],
+            "designProperties": [],
+            "floorplanProperties": [],
+            "events": []
+        },
+        {
+            "catalogControlName": "ListReport-FilterBar",
+            "controlId": "np-ListReport-FilterBar-2",
+            "parentControlId": "root-ListReport-ListReport-Id",
+            "parentGroupId": "filterBars",
+            "parentGroupIndex": 0,
+            "groups": [
+                {
+                    "groupId": "filters",
+                    "children": ["np-ListReport-Filter-3"]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "AllowFreeSearch",
+                    "value": "true",
+                    "type": "string"
+                }
+            ],
+            "designProperties": [],
+            "floorplanProperties": [],
+            "events": []
+        },
+        {
+            "catalogControlName": "ListReport-Filter",
+            "controlId": "np-ListReport-Filter-3",
+            "parentControlId": "np-ListReport-FilterBar-2",
+            "parentGroupId": "filters",
+            "parentGroupIndex": 0,
+            "groups": [],
+            "properties": [
+                {
+                    "name": "FilterOn",
+                    "value": "prop1",
+                    "type": "string"
+                },
+                {
+                    "name": "Description",
+                    "value": "Filter 1",
+                    "type": "string"
+                }
+            ],
+            "designProperties": [],
+            "floorplanProperties": [],
+            "events": []
+        },
+        {
+            "catalogControlName": "ListReport-Column",
+            "controlId": "np-ListReport-Column-4",
+            "parentControlId": "np-ListReport-Table-1",
+            "parentGroupId": "columns",
+            "parentGroupIndex": 0,
+            "groups": [],
+            "properties": [
+                {
+                    "name": "Importance",
+                    "value": "High",
+                    "type": "string"
+                },
+                {
+                    "name": "Currency",
+                    "type": "string"
+                },
+                {
+                    "name": "Title",
+                    "value": "Column 1",
+                    "type": "string"
+                },
+                {
+                    "name": "AdditionalValue",
+                    "type": "string"
+                },
+                {
+                    "name": "Url",
+                    "type": "string"
+                },
+                {
+                    "name": "Value",
+                    "value": "Column 1 value",
+                    "type": "string"
+                }
+            ],
+            "designProperties": [],
+            "floorplanProperties": [],
+            "events": []
+        },
+        {
+            "catalogControlName": "ListReport-Column",
+            "controlId": "np-ListReport-Column-40",
+            "parentControlId": "np-ListReport-Table-1",
+            "parentGroupId": "columns",
+            "parentGroupIndex": 1,
+            "groups": [],
+            "properties": [
+                {
+                    "name": "Importance",
+                    "value": "Low",
+                    "type": "string"
+                },
+                {
+                    "name": "Currency",
+                    "type": "string"
+                },
+                {
+                    "name": "Title",
+                    "value": "Column 2",
+                    "type": "string"
+                },
+                {
+                    "name": "AdditionalValue",
+                    "value": "value 2",
+                    "type": "string"
+                },
+                {
+                    "name": "Url",
+                    "type": "string"
+                },
+                {
+                    "name": "Value",
+                    "value": "Column 2 value",
+                    "type": "string"
+                }
+            ],
+            "designProperties": [],
+            "floorplanProperties": [],
+            "events": []
+        }
+    ]
+}

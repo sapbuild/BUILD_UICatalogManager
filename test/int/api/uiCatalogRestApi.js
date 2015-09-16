@@ -1,10 +1,13 @@
 'use strict';
+var fs = require('fs');
 var path = require('path');
 var NormanTestServer = require('norman-testing-server').server;
 var NormanTestRequester = require('norman-testing-server').Requester;
 require('norman-server-tp');
 var commonServer = require('norman-common-server');
 var registry = commonServer.registry;
+
+var boundary = "0.8206060284283012";
 var configFile = path.join(__dirname, '../config.json');
 
 function UICatalogRestApi() {
@@ -12,11 +15,12 @@ function UICatalogRestApi() {
 
 UICatalogRestApi.prototype.dbInitialize = function (callback) {
     NormanTestServer.initialize(configFile).then(function (server) {
+        //NormanTestServer.dropDB().then(function () {
         var mongoose = commonServer.db.connection.getMongooseConnection({
             database: server.config.db.database
         });
-        mongoose.db.dropCollection('uicatalogs', function () {
-            server.initSchema().then(function () {
+        mongoose.db.dropCollection('uicatalogs', function() {
+            server.initSchema().then(function(){
                 callback();
             });
         });
@@ -35,7 +39,7 @@ UICatalogRestApi.prototype.initializeAdmin = function (user, password) {
     var self = this;
 
     return new Promise(function (resolve, reject) {
-        NormanTestServer.initialize(configFile)
+        NormanTestServer.initialize(configJson)
             .then(function (server) {
                 var aclService = registry.getModule('AclService');
                 var systemContext = {
@@ -52,7 +56,7 @@ UICatalogRestApi.prototype.initializeAdmin = function (user, password) {
 
                     userService.createLocalAdmin(admin, systemContext)
                         .then(function () {
-                            aclService.getAcl().allowEx(configFile.security.roles.globalRoles, systemContext, resolve);
+                            aclService.getAcl().allowEx(configJson.security.roles.globalRoles, systemContext, resolve);
                         })
                         .catch(reject);
 
@@ -89,13 +93,13 @@ UICatalogRestApi.prototype.getActions = function (httpCodeExpected, fnCallBack) 
 
     this.normanTestRequester.reqGet('/api/uicatalogs/catalog/name/openui5r4/catalogversion/1_0/actions', httpCodeExpected, fnCallBack);
 };
-UICatalogRestApi.prototype.getCatalog = function (httpCodeExpected, catName, catVersion, fnCallBack) {
+UICatalogRestApi.prototype.getCatalog = function (httpCodeExpected,catName,catVersion, fnCallBack) {
 
-    this.normanTestRequester.reqGet('/api/uicatalogs/catalog/name/' + catName + '/catalogversion/' + catVersion, httpCodeExpected, fnCallBack);
+    this.normanTestRequester.reqGet('/api/uicatalogs/catalog/name/'+catName+'/catalogversion/'+catVersion, httpCodeExpected, fnCallBack);
 };
-UICatalogRestApi.prototype.getPath = function (httpCodeExpected, libType, libVersion, fnCallBack) {
+UICatalogRestApi.prototype.getPath = function (httpCodeExpected, fnCallBack) {
 
-    this.normanTestRequester.reqGet('/api/uicatalogs/public/uilib/' + libType + '/' + libVersion + '/sap-ui-core.js', httpCodeExpected, fnCallBack);
+    this.normanTestRequester.reqGet('/api/uicatalogs/public/uilib/openui5/1.26.6/sap-ui-core.js', httpCodeExpected, fnCallBack);
 };
 UICatalogRestApi.prototype.getSapUiCorePreloaded = function (httpCodeExpected, fnCallBack) {
 
@@ -105,22 +109,22 @@ UICatalogRestApi.prototype.getSapUiMergedLibrariesCSS = function (httpCodeExpect
 
     this.normanTestRequester.reqGet('/api/uicatalogs/public/uilib/openui5/1.26.6/sap-ui-merged-libraries.css', httpCodeExpected, fnCallBack);
 };
-UICatalogRestApi.prototype.getPathPrivate = function (httpCodeExpected, libType, libVersion, fnCallBack) {
+UICatalogRestApi.prototype.getPathPrivate = function (httpCodeExpected, fnCallBack) {
 
-    this.normanTestRequester.reqGet('/api/uicatalogs/private/uilib/' + libType + '/' + libVersion + '/sap-ui-core.js', httpCodeExpected, fnCallBack);
+    this.normanTestRequester.reqGet('/api/uicatalogs/private/uilib/openui5/1.26.6/sap-ui-core.js', httpCodeExpected, fnCallBack);
 };
-UICatalogRestApi.prototype.getAvailableVersions = function (httpCodeExpected, libType, fnCallBack) {
+UICatalogRestApi.prototype.getAvailableVersions=function(httpCodeExpected,libType,fnCallBack){
 
-    this.normanTestRequester.reqGet('/api/uicatalogs/libtype/' + libType + '/getuilibversions', httpCodeExpected, fnCallBack);
+    this.normanTestRequester.reqGet('/api/uicatalogs/libtype/'+libType+'/getuilibversions',httpCodeExpected,fnCallBack);
 };
 
 UICatalogRestApi.prototype.getCatalogById = function (httpCodeExpected, catId, fnCallBack) {
 
     this.normanTestRequester.reqGet('/api/uicatalogs/catalog/catalogid/' + catId, httpCodeExpected, fnCallBack);
 };
-UICatalogRestApi.prototype.getMetadataGeneratorFiles = function (httpCodeExpected, fnCallBack) {
+UICatalogRestApi.prototype.getMetadataGeneratorFiles=function(httpCodeExpected,fnCallBack){
 
-    this.normanTestRequester.reqGet('/api/uicatalogs/private/metadatagen/1.0/false/openui5/1.0/generateMetadataJson.js', httpCodeExpected, fnCallBack);
+    this.normanTestRequester.reqGet('/api/uicatalogs/private/metadatagen/1.0/false/openui5/1.0/generateMetadataJson.js',httpCodeExpected,fnCallBack);
 };
 
 UICatalogRestApi.prototype.uploadUICatalog = function (httpCodeExpected, libType, libVersion, isPrivate, fnCallBack, attachValue) {
@@ -129,7 +133,7 @@ UICatalogRestApi.prototype.uploadUICatalog = function (httpCodeExpected, libType
     this.normanTestRequester.contentType = null;
 };
 UICatalogRestApi.prototype.updateCustomCatalog = function (httpCodeExpected, fnCallBack, attachValue) {
-    this.normanTestRequester.contentType = 'application/json; charset=utf-8';
+    this.normanTestRequester.contentType = "application/json; charset=utf-8"
     this.normanTestRequester.reqPost('/api/uicatalogs/updateCustomCatalog', httpCodeExpected, fnCallBack, attachValue);
     this.normanTestRequester.contentType = null;
 };

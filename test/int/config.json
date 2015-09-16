@@ -5,7 +5,7 @@
     "debug": {
         "active": false,
         "liveReload": [
-            "/home"
+            "/norman"
         ]
     },
     "server": {},
@@ -55,9 +55,11 @@
             "root": "errors"
         },
         "indexFallback": [
-            "/connect",
-            "/legal",
-            "/home"
+            "/verifyemail",
+            "/auth",
+            "/login",
+            "/signup",
+            "/norman"
         ],
         "compression": {
             "threshold": 512
@@ -80,9 +82,5 @@
     },
     "audit": {
         "defaultCreatedBy": "SYSTEM"
-    },
-    "tests": {
-        "loginURL": "/api-public/login",
-        "signupURL": "/api-public/signup"
     }
 }

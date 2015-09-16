@@ -15,5 +15,13 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "peerDependencies": {
+    "node-sap-app-server": "0.3.0",
+    "norman-audit-server": "0.3.0",
+    "norman-auth-server": "0.3.0",
+    "norman-server-tp": "0.3.0",
+    "norman-testing-server": "0.3.0",
+    "norman-testing-tp": "*0.3.0"
+  },
   "dependencies": {}
 }

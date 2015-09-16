@@ -5,7 +5,7 @@
     "debug": {
         "active": false,
         "liveReload": [
-            "/home"
+            "/norman"
         ]
     },
     "server": {},
@@ -92,7 +92,7 @@
         "handlers": {
             "norman-auth-server": {
                 "users": "/api/users",
-                "auth": "/api-public"
+                "auth": "/auth"
             },
             "norman-ui-catalog-manager-server": "/api/uicatalogs",
             "norman-audit-server": "/audit"
@@ -104,9 +104,11 @@
             "root": "errors"
         },
         "indexFallback": [
-            "/connect",
-            "/legal",
-            "/home"
+            "/verifyemail",
+            "/auth",
+            "/login",
+            "/signup",
+            "/norman"
         ],
         "compression": {
             "threshold": 512
@@ -383,9 +385,5 @@
     },
     "session": {
         "secret": "711606be5b72f394ba28758351779906af717e3cdf5a761c4ce9f01356b512b4"
-    },
-  "tests": {
-    "loginURL": "/api-public/login",
-    "signupURL": "/api-public/signup"
-  }
+    }
 }

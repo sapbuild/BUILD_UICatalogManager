@@ -9,6 +9,6 @@ describe('DB init', function () {
         api.dbInitialize(done);
     });
     it('ok', function (done) {
-        api.initialize('dbinit.uicatalog@example.com', 'Minitest!1').then(done);
+        api.initialize('dbinit.uicatalog@example.com','Minitest!1').then(done);
     });
 });

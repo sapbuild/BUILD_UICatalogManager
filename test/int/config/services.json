@@ -31,7 +31,7 @@
     "handlers": {
         "norman-auth-server": {
             "users": "/api/users",
-            "auth": "/api-public"
+            "auth": "/auth"
         },
         "norman-ui-catalog-manager-server": "/api/uicatalogs",
         "norman-audit-server": "/audit"

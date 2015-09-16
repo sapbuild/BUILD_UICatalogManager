@@ -1,27 +1,19 @@
 {
   "name": "norman-ui-catalog-manager-test",
-  "version": "0.11.24",
+  "version": "0.3.0",
   "description": "UI Catalog Manager Test Module",
   "repository": {
     "type": "git",
-    "url": "https://github.wdf.sap.corp/Norman/UICatalogManager.git"
+    "url": "https://github.com/sapbuild/UICatalogManager.git"
   },
   "licenses": [
     {
       "type": "Apache License, Version 2.0",
-      "url": "https://github.wdf.sap.corp/Norman/Norman/blob/master/LICENSE.txt"
+      "url": "https://github.com/SAP/Build/blob/master/LICENSE.txt"
     }
   ],
   "engines": {
     "node": ">=0.10.0"
-  },
-  "peerDependencies": {
-    "node-sap-app-server": "~0.1.20",
-    "norman-audit-server": "*",
-    "norman-auth-server": "*",
-    "norman-server-tp": "*",
-    "norman-testing-server": "*",
-    "norman-testing-tp": "*"
   },
   "dependencies": {}
 }

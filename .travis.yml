@@ -11,3 +11,5 @@ node_js:
   
 script:
   - grunt dist 
+  
+services: mongodb
